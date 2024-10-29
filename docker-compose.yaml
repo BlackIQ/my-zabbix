@@ -6,8 +6,8 @@ services:
     environment:
       MYSQL_DATABASE: zabbix
       MYSQL_USER: zabbix
-      MYSQL_PASSWORD: zabbix_password
-      MYSQL_ROOT_PASSWORD: root_password
+      MYSQL_PASSWORD: 12420213
+      MYSQL_ROOT_PASSWORD: 12420213
     volumes:
       - ./zabbix_db:/var/lib/mysql
 
@@ -17,7 +17,7 @@ services:
       DB_SERVER_HOST: zabbix-db
       MYSQL_DATABASE: zabbix
       MYSQL_USER: zabbix
-      MYSQL_PASSWORD: zabbix_password
+      MYSQL_PASSWORD: 12420213
     depends_on:
       - zabbix-db
     ports:
@@ -29,7 +29,7 @@ services:
       DB_SERVER_HOST: zabbix-db
       MYSQL_DATABASE: zabbix
       MYSQL_USER: zabbix
-      MYSQL_PASSWORD: zabbix_password
+      MYSQL_PASSWORD: 12420213
       ZBX_SERVER_HOST: zabbix-server
     depends_on:
       - zabbix-server
